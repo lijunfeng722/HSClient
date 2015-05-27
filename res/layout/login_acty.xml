@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginpage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <com.way.util.LineEditText
+            android:id="@+id/lgoin_accounts"
+            style="?android:attr/textViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip"
+            android:background="@null"
+            android:hint="@string/account"
+            android:inputType="number"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="12.0dip"
+            android:textColor="#ff1d1d1d"
+            android:textColorHint="#ff666666"
+            android:textSize="16.0sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="@null" />
+
+        <com.way.util.LineEditText
+            android:id="@+id/login_password"
+            style="?android:attr/textViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dip"
+            android:background="#00ffffff"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingLeft="12.0dip"
+            android:textColor="#ff1d1d1d"
+            android:textColorHint="#ff666666"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/input"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:layout_marginTop="12.0dip"
+        android:background="@drawable/yuanjiaojuxing_lightpurple"
+        android:gravity="center"
+        android:padding="5.0dip"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:textSize="18.0sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/login_btn"
+        android:layout_marginBottom="18dp"
+        android:layout_weight="1" >
+
+        <CheckBox
+            android:id="@+id/auto_save_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/checkbox_bg1"
+            android:drawablePadding="4.0dip"
+            android:text="@string/auto_save_password"
+            android:textColor="#7D26CD"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:id="@+id/regist_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:gravity="left|center"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="18.0dip"
+            android:text="@string/register2"
+            android:textColor="#7D26CD"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:src="@drawable/icon" />
+
+</RelativeLayout>

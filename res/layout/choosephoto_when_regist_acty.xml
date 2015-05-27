@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/mypicture_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="29dp"
+            android:background="@drawable/circle_lightpurple"
+            android:text="相册选取"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/system_camera_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/circle_lightpurple"
+            android:text="相机拍照"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgVwInPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="0.13"
+        android:background="@drawable/yuanjiaojuxing_gray" />
+
+    <Button
+        android:id="@+id/yes_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/yuanjiaojuxing_lightpurple"
+        android:text="确定"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

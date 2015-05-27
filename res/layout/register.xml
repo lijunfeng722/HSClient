@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_title"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/reg_back_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/selector_btn_back"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/hs_register"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="left"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="15.0dip"
+                android:text="*邮箱"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp" />
+
+            <com.way.util.LineEditText
+                android:id="@+id/reg_email"
+                android:layout_width="1px"
+                android:layout_height="44.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="请输入邮箱"
+                android:inputType="textEmailAddress"
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:textColor="#ff545454"
+                android:textSize="16.0sp" >
+
+                <requestFocus />
+            </com.way.util.LineEditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/shape_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="15.0dip"
+                android:text="*昵称"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp" />
+
+            <com.way.util.LineEditText
+                android:id="@+id/reg_name"
+                android:layout_width="1px"
+                android:layout_height="44.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:hint="请输入昵称"
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:textColor="#ff545454"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/shape_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="15.0dip"
+                android:text="*密码"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp" />
+
+            <com.way.util.LineEditText
+                android:id="@+id/reg_password"
+                android:layout_width="1px"
+                android:layout_height="44.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:textColor="#ff545454"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/shape_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="44.0dip"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="15.0dip"
+                android:text="*确认 密码"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp" />
+
+            <com.way.util.LineEditText
+                android:id="@+id/reg_password2"
+                android:layout_width="1px"
+                android:layout_height="44.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:textColor="#ff545454"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/yuanjiaojuxing_lightpurple"
+        android:text="注 册"
+        android:textColor="#FFFFFF"
+        android:textSize="18.0sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/yuanjiaojuxing_gray"
+        android:layout_marginTop="7dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/register_tip"
+        android:textColor="@color/button_unselected"
+        android:textSize="14.0sp" />
+
+</RelativeLayout>

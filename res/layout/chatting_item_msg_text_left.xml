@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_chatcontent" />
+
+        <ImageView
+            android:id="@+id/userImgVwInL"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_username"
+            android:background="@color/transparent"
+            android:focusable="false"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_chatcontent"
+            style="@style/chat_content_date_style"
+            android:layout_width="wrap_content"
+            android:minWidth="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/userImgVwInL"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/chatfrom_bg" />
+
+    </RelativeLayout>
+
+</LinearLayout>
